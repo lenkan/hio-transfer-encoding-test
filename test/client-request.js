@@ -4,7 +4,7 @@ const { buffer } = require("stream/consumers");
 Promise.all(
   Array.from({ length: 100 }).map((_, i) => {
     return new Promise((resolve, reject) => {
-      const request = http.get(`http://localhost:8081`);
+      const request = http.get(`http://localhost:8081?req=${i}`);
 
       request.on("response", async (response) => {
         try {

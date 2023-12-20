@@ -4,7 +4,6 @@ from hio.core import http
 from os import environ
 
 class Resource:
-
     def on_get(self, req: falcon.Request, resp: falcon.Response):
         print(req.params)
         resp.status = falcon.HTTP_204
