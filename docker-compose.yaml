@@ -1,0 +1,9 @@
+services:
+  server:
+    build: ./server
+    ports:
+      - 8081:8081
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONIOENCODING=UTF-8
+  

@@ -1,15 +1,18 @@
-# Install dependencies
+# Build server
 
 ```
-pip install -r requirements.txt
+docker compose build server
 ```
 
-Start server
+Start
 
 ```
-python server.py
+docker compose up -d server
 ```
 
+## Questions
+
+- Does hio use blake3 dependency?
 
 # Run curl
 
